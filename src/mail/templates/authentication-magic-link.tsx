@@ -22,7 +22,7 @@ export function AuthenticationMagicLinkTemplate({
   userEmail,
   authLink,
 }: AuthenticationMagicLinkTemplateProps) {
-  const previewText = `Faça login na Pizza Shop`
+  const previewText = `Faça login na OrderFlow`
 
   return (
     <Html>
@@ -35,10 +35,10 @@ export function AuthenticationMagicLinkTemplate({
               <span className="text-2xl">🍕</span>
             </Section>
             <Heading className="text-black text-[24px] font-normal text-center p-0 my-[30px] mx-0">
-              Faça login na Pizza Shop
+              Faça login na OrderFlow
             </Heading>
             <Text className="text-black text-[14px] leading-[24px]">
-              Você solicitou um link para login na Pizza Shop através do email{' '}
+              Você solicitou um link para login na OrderFlow através do email{' '}
               {userEmail}.
             </Text>
             <Section className="text-center mt-[32px] mb-[32px]">
