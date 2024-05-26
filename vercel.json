@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "src/http/server.ts",
+        "use": "@vercel/bun"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "src/http/server.ts"
+      }
+    ],
+    "env": {
+      "DB_URL": "@db_url"
+    }
+  }
+  
