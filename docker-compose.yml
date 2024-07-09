@@ -7,5 +7,3 @@ services:
       - "3333:3333"
     env_file:
       - .env.local
-    volumes:
-      - ./src:/usr/src/app  # Ajuste o caminho conforme necessário

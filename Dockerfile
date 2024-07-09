@@ -22,4 +22,4 @@ RUN bun install
 EXPOSE 3333
 
 # Comando para iniciar o aplicativo
-CMD ["bun", "start"]
+ENTRYPOINT ["bun", "start"]
