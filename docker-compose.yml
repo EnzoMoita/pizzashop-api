@@ -1,16 +1,11 @@
 version: '3.7'
 
 services:
-  postgres:
-    image: bitnami/postgresql:latest
+  api:
+    build: .
     ports:
-      - '5433:5432'
-    environment:
-      - POSTGRES_USER=docker
-      - POSTGRES_PASSWORD=docker
-      - POSTGRES_DB=pizzashop
+      - "3333:3333"
+    env_file:
+      - .env.local
     volumes:
-      - postgres_data:/bitnami/postgresql
-
-volumes:
-  postgres_data:
+      - ./src:/usr/src/app  # Ajuste o caminho conforme necessário
